@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+#Principal_Content {
+    height: 100vh;
+    width: 100%;
+}
+
+
+#Content_Contenido{
+width: 96%;
+margin-left: 2%;
+margin-right: 2%;
+height: fit-content;
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+display: flex;
+flex-direction: column;
+}
+
+#PiePagina_Content{
+    width: 100%;
+    height: 10%;
+    background-color: #424242;
+}
+
+
+
+#ContenedorCarrusel{
+    width: 50%;
+    display: flex;
+}
+
+#Titulo{
+    width: 100%;
+}
+
+/* Estilo para el footer */
+#PiePagina_Content {
+    background-color: #424242;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    height: fit-content;
+}
+
+#PiePagina_Content .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#PiePagina_Content .footer-section {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+    text-align: left;
+}
+
+#PiePagina_Content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#PiePagina_Content p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+#PiePagina_Content ul {
+    list-style: none;
+    padding: 0;
+}
+
+#PiePagina_Content ul li {
+    margin: 5px 0;
+}
+
+#PiePagina_Content a {
+    color: #FF9900;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#PiePagina_Content a:hover {
+    color: #FFCC00;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    #PiePagina_Content .footer-container {
+        flex-direction: column;
+    }
+
+    #PiePagina_Content .footer-section {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Estilo para el contenido principal */
+#Content_Contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#Content_Contenido #Titulo {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#Content_Contenido p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#Content_Contenido h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    #Content_Contenido {
+        flex-direction: column;
+    }
+    
+    #Content_Contenido #Titulo {
+        font-size: 28px;
+    }
+
+    #Content_Contenido p {
+        font-size: 16px;
+    }
+    
+    #Content_Contenido h2 {
+        font-size: 22px;
+    }
+}
+
+/* Estilo para la sección de Curiosidades */
+#Curiosidades {
+    background-color: #F7F7F7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#Curiosidades h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#Curiosidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+#Curiosidades li {
+    margin-bottom: 20px;
+}
+
+#Curiosidades p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Estilo para la sección de Noticias Relevantes */
+#NoticiasRelevantes {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#NoticiasRelevantes h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.noticia {
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.noticia h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.noticia p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.noticia a {
+    text-decoration: none;
+    color: #FF9900;
+    transition: color 0.3s;
+}
+
+.noticia a:hover {
+    color: #FFCC00;
+}
+
+/* Estilo para el encabezado */
+/* Estilo para el encabezado */
+#Nav_Content {
+    background-color: #FF9900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    margin-bottom: 20px;
+}
+
+#Contenedor_Logo {
+    display: flex;
+    align-items: center;
+}
+
+#Contenedor_Logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 50px; /* Ajusta este valor según el tamaño deseado */
+}
+
+#Contenedor_Logo h1 {
+    font-size: 24px;
+    margin-left: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+#listaNav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#listaNav li {
+    margin-right: 20px;
+}
+
+#listaNav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    transition: color 0.3s;
+}
+
+#listaNav a:hover {
+    color: #FFCC00;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    #Nav_Content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Contenedor_Logo {
+        margin-bottom: 10px;
+    }
+
+    #Contenedor_Logo img {
+        max-width: 80%; /* Ajusta este valor según el tamaño deseado */
+    }
+
+    #listaNav {
+        margin-top: 10px;
+    }
+
+    #listaNav li {
+        margin-right: 10px;
+    }
+
+    #listaNav a {
+        font-size: 16px;
+    }
+}
+
+/* Estilo para las imágenes del carrusel */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 300px; /* Ajusta este valor según el tamaño deseado */
+}
